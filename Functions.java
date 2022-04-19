@@ -1,20 +1,20 @@
-import java.util.Scanner;
+package OOpsPrograms;
+
 public class Functions {
-	static int printAdd(int x,int y) {
-		
-		System.out.println("the sum of is"+(x+y));
-		return x+y;
-	}
+	  int I=10; // instance
+	 static int s =20;// static
+	 void printvalue()
+	 {
+		 System.out.println(""+I);
+	 }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//       int a=10;
-//       int b=10;
-		System.out.println("enter 2num");
-		Scanner sc=new Scanner(System.in);
-		int a=sc.nextInt();
-		int b=sc.nextInt();
-		printAdd(a,b);
+		Functions f1=new Functions();
+		System.out.println(""+Functions.s);
+		System.out.println(""+f1.s);
+        System.out.println(""+s);
+        f1.printvalue();
 	}
 
 }
